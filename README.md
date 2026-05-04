@@ -16,7 +16,9 @@ cd ../web && cp .env.example .env.local
 npm run dev
 ```
 
-Deploy the contract to Base mainnet, set `NEXT_PUBLIC_CHECK_IN_CONTRACT_ADDRESS`, register the app on [base.dev](https://www.base.dev), and set `NEXT_PUBLIC_BASE_APP_ID` and `NEXT_PUBLIC_BUILDER_CODE`.
+Production app URL: **`https://vim-genius.vercel.app`** (Vercel Root Directory **`web`**).
+
+Deploy the contract to Base mainnet, set `NEXT_PUBLIC_CHECK_IN_CONTRACT_ADDRESS`, register the app on [base.dev](https://www.base.dev), and set `NEXT_PUBLIC_BASE_APP_ID` and `NEXT_PUBLIC_BUILDER_CODE` on Vercel (see [`web/.env.example`](web/.env.example)).
 
 ## Environment
 

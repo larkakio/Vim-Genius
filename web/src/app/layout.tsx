@@ -20,7 +20,7 @@ export const metadata: Metadata = {
   title: "Vim Genius",
   description: "Cyberpunk Vim grid puzzles on Base — swipe hjkl, daily check-in.",
   metadataBase: new URL(
-    process.env.NEXT_PUBLIC_SITE_URL ?? "http://localhost:3000",
+    process.env.NEXT_PUBLIC_SITE_URL ?? "https://vim-genius.vercel.app",
   ),
   icons: {
     icon: "/app-icon.jpg",
