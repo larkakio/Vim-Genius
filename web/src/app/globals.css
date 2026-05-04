@@ -1,0 +1,52 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #050810;
+  --foreground: #e2e8f0;
+  --neon-cyan: #22d3ee;
+  --neon-fuchsia: #e879f9;
+  --neon-violet: #a78bfa;
+}
+
+html {
+  color-scheme: dark;
+}
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+  min-height: 100dvh;
+}
+
+/* Subtle scanline / grid atmosphere */
+body::before {
+  content: "";
+  pointer-events: none;
+  position: fixed;
+  inset: 0;
+  z-index: 50;
+  opacity: 0.04;
+  background-image: repeating-linear-gradient(
+    0deg,
+    transparent,
+    transparent 2px,
+    rgba(34, 211, 238, 0.35) 2px,
+    rgba(34, 211, 238, 0.35) 3px
+  );
+}
+
+body::after {
+  content: "";
+  pointer-events: none;
+  position: fixed;
+  inset: 0;
+  z-index: 49;
+  opacity: 0.12;
+  background: radial-gradient(
+    ellipse 120% 80% at 50% -20%,
+    rgba(232, 121, 249, 0.25),
+    transparent 55%
+  );
+}
